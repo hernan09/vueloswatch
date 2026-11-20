@@ -1,0 +1,11 @@
+{
+  "name": "vuelos-watch",
+  "private": true,
+  "scripts": {
+    "backend": "npm --prefix backend start",
+    "web": "npm --prefix web dev",
+    "web:build": "npm --prefix web build",
+    "mobile": "npm --prefix mobile start",
+    "install:all": "npm --prefix backend install && npm --prefix web install && npm --prefix mobile install"
+  }
+}

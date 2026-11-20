@@ -1,0 +1,17 @@
+{
+  "name": "VuelosWatch",
+  "short_name": "VuelosWatch",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#0F766E",
+  "description": "Alertas de vuelos BUE → FLN y más",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
