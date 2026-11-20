@@ -1,5 +1,11 @@
+const API_BASE = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
+
+function url(path) {
+  return `${API_BASE}${path}`;
+}
+
 async function request(path, options = {}) {
-  const res = await fetch(path, {
+  const res = await fetch(url(path), {
     headers: {
       "Content-Type": "application/json",
       ...(options.headers || {}),
