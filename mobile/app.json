@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "VuelosWatch",
+    "slug": "vuelos-watch",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "vueloswatch",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F0FDFA"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vueloswatch.app",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.vueloswatch.app",
+      "googleServicesFile": "./google-services.json",
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#F0FDFA",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "POST_NOTIFICATIONS",
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#0F766E",
+          "defaultChannel": "flights"
+        }
+      ]
+    ],
+    "extra": {
+      "apiUrl": "http://192.168.0.12:3001",
+      "eas": {
+        "projectId": "bbf81d2b-ac6d-4dbb-bf1a-d2b3be4f4ac8"
+      }
+    },
+    "owner": "herno09"
+  }
+}
