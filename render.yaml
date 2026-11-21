@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: vueloswatch-api
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FLIGHT_PROVIDER
+        value: demo
+      - key: CHECK_INTERVAL_MINUTES
+        value: "5"

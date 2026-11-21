@@ -1,0 +1,9 @@
+# Alternativa si creás el servicio apuntando solo a /backend
+services:
+  - type: web
+    name: vueloswatch-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
